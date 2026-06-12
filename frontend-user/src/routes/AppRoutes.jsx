@@ -27,7 +27,7 @@ export default function AppRoutes() {
       <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
 
       {/* Routes with Main Layout */}
-      <Route path="/" element={<MainLayout><Home /></MainLayout>} />
+      <Route path="/" element={<ProtectedRoute><MainLayout><Home /></MainLayout></ProtectedRoute>} />
       <Route path="/products" element={<MainLayout><Products /></MainLayout>} />
       <Route path="/product/:id" element={<MainLayout><ProductDetails /></MainLayout>} />
       

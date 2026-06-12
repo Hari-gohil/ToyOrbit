@@ -11,8 +11,8 @@ export default function ProtectedRoute({ children }) {
   }
 
   if (!user) {
-    // Redirect them to the /register page as requested
-    return <Navigate to="/register" state={{ from: location }} replace />;
+    // Redirect them to the /login page
+    return <Navigate to="/login" state={{ from: location }} replace />;
   }
 
   return children;
