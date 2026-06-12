@@ -60,7 +60,7 @@ app.get("/", (req, res) => {
 
 const allowedOrigins = [
   "https://toyorbitmain.vercel.app/",
-  "https://toy-orbit-lkh6.vercel.app"
+  "https://toyorbit.vercel.app/"
 ];
 
 app.use(
